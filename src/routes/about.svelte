@@ -18,21 +18,22 @@
 	<title>About</title>
 </svelte:head>
 
-<div class="min-h-screen bg-gray-100 bg-transparent py-3 flex flex-col justify-center sm:py-12">
+<div class="min-h-screen bg-transparent py-3 flex flex-col justify-start sm:py-8">
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div
-			class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+			class="absolute inset-0 bg-gradient-to-r from-yellow-400 to-blue-900 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-2xl"
 		/>
-		<div class="relative px-4 py-5 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+		<div class="relative px-4 py-5 bg-gray-200 shadow-lg sm:rounded-2xl sm:p-20">
 			<div class="max-w-md mx-auto">
 				<div>
-					<p class="font-extrabold">What is Coastal Vantage?</p>
+					<p class="text-2xl font-extrabold">So what <em>is</em> Coastal Vantage?</p>
 				</div>
-				<div class="divide-y divide-gray-200">
+				<div class="divide-y divide-blue-200">
 					<div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
 						<p>
-							It's the magic of bridging photography and data together, for the sake of better
-							decision-making.
+							Our South Carolina Lowcountry may just be one of the most <span class="font-extrabold"
+								>beautiful</span
+							> places on Earth. (Right?)
 						</p>
 						<ul class="list-disc space-y-2">
 							<li class="flex items-start">
@@ -49,10 +50,7 @@
 										/>
 									</svg>
 								</span>
-								<p class="ml-2">
-									Customizing your
-									<code class="text-sm font-bold text-gray-900">tailwind.config.js</code> file
-								</p>
+								<p class="ml-2">Footage of our favorite places &amp; hidden gems.</p>
 							</li>
 							<li class="flex items-start">
 								<span class="h-6 flex items-center sm:h-7">
@@ -68,10 +66,7 @@
 										/>
 									</svg>
 								</span>
-								<p class="ml-2">
-									Extracting classes with
-									<code class="text-sm font-bold text-gray-900">@apply</code>
-								</p>
+								<p class="ml-2">Neighborhood-specific data & resources</p>
 							</li>
 							<li class="flex items-start">
 								<span class="h-6 flex items-center sm:h-7">
@@ -87,7 +82,7 @@
 										/>
 									</svg>
 								</span>
-								<p class="ml-2">Code completion with instant preview</p>
+								<p class="ml-2">Local expertise focused on resilient-living</p>
 							</li>
 						</ul>
 						<p>
@@ -96,10 +91,10 @@
 						</p>
 					</div>
 					<div class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7">
-						<p>Want to dig deeper into Tailwind?</p>
+						<p>Ready to explore?</p>
 						<p>
 							<a href="https://tailwindcss.com/docs" class="text-cyan-600 hover:text-cyan-700">
-								Read the docs &rarr;
+								View the gallery &rarr;
 							</a>
 						</p>
 					</div>

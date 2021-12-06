@@ -13,7 +13,7 @@
 <footer>
 	<p>
 		Developed by
-		<a href="https://emmalu.github.io/portfolio" target="_blank">
+		<a class="button" href="https://emmalu.github.io/portfolio" target="_blank">
 			<img src={logo} alt="MapMazeLu Portfolio" />
 		</a>
 		<span class="font-semibold">MapMazeLu</span> | Coastal Vantage &copy; 2021
@@ -26,7 +26,8 @@
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
-		width: 100%;
+		width: 100vw;
+		height: 80vh;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -37,7 +38,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		color: var(--primary-color);
+		color: var(--tertiary-color);
 		margin-bottom: 0;
 	}
 
@@ -46,6 +47,9 @@
 		height: 2em;
 		/* object-fit: contain; */
 		display: inline;
+	}
+	footer p a:hover {
+		translate: 20px;
 	}
 	@media (min-width: 480px) {
 		footer {

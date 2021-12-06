@@ -14,16 +14,16 @@
 	<div class="welcome">
 		<img src="logo/svg/3.svg" alt="Coastal Vantage logo" />
 	</div>
-	<div class="flex">
+	<div class="flex cv">
 		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-5 pb-5">
-			<div class="uppercase divide-y divide-gray-200">
+			<div class="divide-y divide-gray-200">
 				A <span class="font-semibold">future-focused</span> view of the Lowcountry
 				<!-- <picture>
 					<source src="cover.png" type="image/svg" />
 					<img src="cover.png" alt="Coastal Vantage" />
 				</picture> -->
 			</div>
-			<div class="text-sm text-center pt-5 text-blue-900">Coming Soon</div>
+			<div class="bhhs text-sm text-center pt-5">Coming Soon</div>
 		</div>
 	</div>
 
@@ -31,6 +31,9 @@
 </section>
 
 <style>
+	.bhhs {
+		color: var(--accent-color);
+	}
 	.welcome {
 		position: relative;
 		width: 100%;
