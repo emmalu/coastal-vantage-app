@@ -11,13 +11,13 @@
 </svelte:head>
 
 <section>
-	<div class="welcome">
-		<img src="/logos/logo-am.svg" alt="Coastal Vantage logo" />
+	<div class="pb-5">
+		<img src="/logos/logo-am.svg" alt="Coastal Vantage logo" width="500rem" height="auto" />
 	</div>
 	<div class="flex cv">
 		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-5 pb-5">
 			<div class="divide-y divide-gray-200">
-				A <span class="font-semibold">neighborhood-focused</span> view of the Lowcountry
+				A <span class="font-semibold">neighborhood-focused</span> view of our Lowcountry
 				<!-- <picture>
 					<source src="cover.png" type="image/svg" />
 					<img src="cover.png" alt="Coastal Vantage" />
@@ -34,21 +34,4 @@
 	.bhhs {
 		color: var(--accent-color);
 	}
-	/* .welcome {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		/* padding: 0 0 calc(100% * 495 / 2048) 0; 
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-		background-size: 125%;
-		background-repeat: repeat-x;
-		animation: animatedBackground 15s linear alternate infinite;
-	} */
 </style>
