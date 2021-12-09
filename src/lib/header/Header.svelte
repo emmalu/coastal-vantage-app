@@ -57,7 +57,6 @@
 		align-items: center;
 		list-style: none;
 		background: var(--background);
-		background-size: contain;
 	}
 
 	li {

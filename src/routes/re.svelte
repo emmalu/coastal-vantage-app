@@ -3,7 +3,6 @@
 	//import Counter from '$lib/Counter.svelte';
 	import Header from '$lib/header/Header.svelte';
 	import About from './about.svelte';
-	import BHHS from '../../static/bhhs/SC307_V_SBS_Seal_cab_cmyk.png';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -23,7 +22,7 @@
 </svelte:head>
 
 <div class="items-center bg-transparent py-3 flex flex-col justify-start sm:py-8">
-	<img src={BHHS} alt="BHHS Logo" />
+	<img src="/logos/bhhs.png" alt="BHHS Logo" />
 </div>
 <a
 	href="https://emma.myhomecharleston.com"

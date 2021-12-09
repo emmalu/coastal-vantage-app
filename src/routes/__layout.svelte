@@ -12,11 +12,11 @@
 
 <footer>
 	<p>
-		Developed by
-		<a class="button" href="https://emmalu.github.io/portfolio" target="_blank">
-			<img src={logo} alt="MapMazeLu Portfolio" />
+		Coastal Vantage &copy; 2021
+		<img src={logo} alt="MapMazeLu Portfolio" />
+		<a class="button text-black" href="https://emmalu.github.io/portfolio" target="_blank">
+			Developed by <span class="font-semibold">MapMazeLu</span> &rarr;
 		</a>
-		<span class="font-semibold">MapMazeLu</span> | Coastal Vantage &copy; 2021
 	</p>
 </footer>
 
@@ -25,7 +25,6 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100vw;
 		height: 80vh;
 		margin: 0 auto;
@@ -37,20 +36,17 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 10px;
 		color: var(--tertiary-color);
 		margin-bottom: 0;
+		font-size: smaller;
 	}
 
 	footer img {
 		width: 2em;
 		height: 2em;
-		/* object-fit: contain; */
 		display: inline;
 	}
-	footer p a:hover {
-		translate: 20px;
-	}
+	
 	@media (min-width: 480px) {
 		footer {
 			padding: 20px 0;
