@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	font-family: Cambria, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #fff;
@@ -21,11 +21,13 @@
 
 body {
 	background-color: var(--secondary-color);
+	font-family: Avenir, Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 1em;
 }
 section {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex: 1;
 	width: 100vw;
@@ -34,10 +36,6 @@ section {
 a {
 	color: var(--primary-color);
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 pre {
@@ -51,10 +49,11 @@ pre {
 	color: var(--text-color);
 }
 
-/* body {
-	min-height: 100vh;
-	margin: 0;
-	background-color: var(--primary-color);
+.bhhs {
+	color: var(--accent-color);
+}
+
+.cv {
 	background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
@@ -63,19 +62,3 @@ pre {
 		var(--tertiary-color) 61.35%
 	);
 }
-
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
-} */

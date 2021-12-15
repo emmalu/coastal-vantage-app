@@ -1,9 +1,6 @@
-<script context="module" lang="ts">
+<script context="module">
+	import BHHS from '$lib/bhhs.svelte';
 	export const prerender = true;
-</script>
-
-<script lang="ts">
-	//import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
@@ -11,27 +8,16 @@
 </svelte:head>
 
 <section>
-	<div class="pb-5">
-		<img src="/logos/logo-am.svg" alt="Coastal Vantage logo" width="500rem" height="auto" />
+	<div class="pb-4">
+		<img src="/logos/logo-am.svg" alt="Coastal Vantage logo" width="450rem" height="auto" />
 	</div>
-	<div class="flex cv">
-		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-5 pb-5">
-			<div class="divide-y divide-gray-200">
+	<div class="flex">
+		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-4 pb-4 text-xl">
+			<div class="divide-y divide-gray-300 pt-5 pb-5 text-center">
 				A <span class="font-semibold">neighborhood-focused</span> view of our Lowcountry
-				<!-- <picture>
-					<source src="cover.png" type="image/svg" />
-					<img src="cover.png" alt="Coastal Vantage" />
-				</picture> -->
 			</div>
-			<div class="bhhs text-sm text-center pt-5 italic">Coming Soon</div>
+			<!-- <img class="object-cover w-40" src="/cover.png" alt="Beaufort Aerial" /> -->
+			<!-- <div class="max-w-md mx-auto"><BHHS /></div> -->
 		</div>
 	</div>
-
-	<!-- <Counter /> -->
 </section>
-
-<style>
-	.bhhs {
-		color: var(--accent-color);
-	}
-</style>

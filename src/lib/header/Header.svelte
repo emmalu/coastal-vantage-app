@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<header>
+<header class="z-50 fixed">
 	<nav>
 		<!-- <svg viewBox="0 0 1440 320">
 			<path
@@ -15,12 +15,15 @@
 			<li class:active={$page.path === '/'}>
 				<a sveltekit:prefetch href="/">Home</a>
 			</li>
-			<!-- <li class:active={$page.path === '/about'}>
-				<a sveltekit:prefetch href="/about">About</a>
+			<li class:active={$page.path === '/about'}>
+				<a sveltekit:prefetch href="/about">Meet & Greet</a>
 			</li>
-			<li class:active={$page.path === '/re'}>
-				<a sveltekit:prefetch href="/re">Real Estate</a>
+			<!-- <li class:active={$page.path === '/footage'}>
+				<a sveltekit:prefetch href="/footage">Footage</a>
 			</li> -->
+			<li class:active={$page.path === '/contact'}>
+				<a sveltekit:prefetch href="/contact">Contact</a>
+			</li>
 		</ul>
 		<!-- <svg viewBox="0 0 1440 320" class="right">
 			<path
