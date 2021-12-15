@@ -25,16 +25,16 @@
 		<p class="pb-3">Licensed REALTOR&reg; with</p>
 	</section>
 	<section>
-		<img src="/logos/bhhs.png" alt="BHHS Logo" />
+		<img class="w-96" src="/logos/bhhs.png" alt="BHHS Logo" />
 
 		<p class="pt-3">License #: 126299</p>
 		<p>1440 Ben Sawyer Blvd Ste 1503</p>
 		<p>Mt Pleasant, SC 29464</p>
-		<p class="pb-3"><a class="bhhs" href="tel:+18433888118">843-388-8118</a></p>
+		<p class="pb-3"><a class="bhhs hover:text-red-700" href="tel:+18433888118">843-388-8118</a></p>
 		<a
 			href="https://emma.myhomecharleston.com"
 			target="_blank"
-			class="button shadow-md bg-blue-900 text-white hover:bg-yellow-400 hover:text-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 mb-3"
+			class="button shadow-md bg-blue-900 text-white hover:bg-blue-700 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 mb-3"
 			>BHHS Properties <svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="h-5 w-5 inline"
@@ -50,9 +50,10 @@
 		</a>
 	</section>
 	<section class="max-w-xl mx-auto p-3 text-sm text-justify">
-		<p class="drop-cap">
-			Emma first moved to Charleston in <span class="font-semibold">2009</span>, to enroll in the
-			M.S. Environmental Studies program the
+		<p>
+			<span class="text-xl">E</span>mma first moved to Charleston in
+			<span class="font-semibold">2009</span>, to enroll in the M.S. Environmental Studies program
+			the
 			<span class="font-semibold">College of Charleston</span>. Throughout her time in graduate
 			school, Emma learned the history &amp; science of the
 			<span class="font-semibold">Coastal Estuarine environment</span>
@@ -76,7 +77,7 @@
 </div>
 
 <style>
-	img {
+	/* img {
 		position: relative;
 		width: 30%;
 		height: auto;
@@ -86,8 +87,8 @@
 		animation: animatedBackground 15s linear alternate infinite;
 	}
 	.drop-cap::first-letter {
-		-webkit-initial-letter: 3;
-		initial-letter: 3;
+		-webkit-initial-letter: 1;
+		initial-letter: 1;
 		font-size: 20px;
-	}
+	} */
 </style>
