@@ -2,10 +2,10 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="pt-3 leading-5 sm:text-lg sm:leading-6 items-center">
-	<div class="grid grid-cols-4 gap-2">
+<div class="pt-3 leading-5 sm:text-lg sm:leading-6">
+	<div class="grid grid-cols-4 items-center gap-2">
 		<div class="col-span-1">
-			<img src="/logos/bhhs-seal.png" alt="BHHS Seal" class="responsive w-full object-cover" />
+			<img src="/logos/bhhs-seal.png" alt="BHHS Seal" class="responsive w-full" />
 		</div>
 		<div class="col-span-3">
 			Coastal Vantage is part of the <strong class="bhhs"

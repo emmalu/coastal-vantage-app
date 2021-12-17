@@ -8,8 +8,11 @@
 </svelte:head>
 
 <section>
+	<div class="pt-4 px-2">
+		<img class="w-96" src="/logos/bhhs-cover.png" alt="BHH logo" />
+	</div>
 	<div class="pb-4">
-		<img src="/logos/logo-am.svg" alt="Coastal Vantage logo" width="450rem" height="auto" />
+		<img class="w-72 h-72" src="/logos/logo-am.svg" alt="Coastal Vantage logo" />
 	</div>
 	<div class="flex">
 		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-4 pb-4 text-xl">

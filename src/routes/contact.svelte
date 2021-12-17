@@ -25,7 +25,7 @@
 		<p class="pb-3">Licensed REALTOR&reg; with</p>
 	</section>
 	<section>
-		<img class="w-96" src="/logos/bhhs.png" alt="BHHS Logo" />
+		<img class="w-56" src="/logos/bhhs-cover.png" alt="BHHS Logo" />
 
 		<p class="pt-3">License #: 126299</p>
 		<p>1440 Ben Sawyer Blvd Ste 1503</p>
@@ -50,8 +50,8 @@
 		</a>
 	</section>
 	<section class="max-w-xl mx-auto p-3 text-sm text-justify">
-		<p>
-			<span class="text-xl">E</span>mma first moved to Charleston in
+		<div>
+			<span class="float-left text-6xl pr-2">E</span>mma first moved to Charleston in
 			<span class="font-semibold">2009</span>, to enroll in the M.S. Environmental Studies program
 			the
 			<span class="font-semibold">College of Charleston</span>. Throughout her time in graduate
@@ -72,7 +72,7 @@
 			in
 			<span class="font-semibold">Resiliency &amp; Sustainability</span> to the field of Real Estate,
 			with the intent of providing as much added value to her clients as she can.
-		</p>
+		</div>
 	</section>
 </div>
 
