@@ -10,7 +10,7 @@
 	<div class="pt-4 px-2">
 		<img class="w-96" src="/logos/bhhs-cover.png" alt="BHH logo" />
 	</div>
-	<div class="pb-4">
+	<div class="pt-8 pb-4">
 		<img class="w-72 h-72" src="/logos/logo-am.svg" alt="Coastal Vantage logo" />
 	</div>
 	<div class="flex">

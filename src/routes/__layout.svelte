@@ -4,6 +4,8 @@
 	import { Icon } from 'svelte-awesome';
 	import { instagram, phone, at, arrowRight } from 'svelte-awesome/icons';
 	import '../app.css';
+
+	var year = new Date().getFullYear();
 </script>
 
 <Header />
@@ -68,13 +70,13 @@
 	</div>
 	<div>
 		<div class="px-10 py-2">
-			&copy;2021 BHH Affiliates, LLC. An independently owned and operated franchisee of BHH
-			Affiliates, LLC. <br class="hidden sm:block" />Berkshire Hathaway HomeServices and the
-			Berkshire Hathaway HomeServices symbol are registered service marks of Columbia Insurance
-			Company, a Berkshire Hathaway affiliate. Equal Housing Opportunity.
+			&copy;{year} BHH Affiliates, LLC. An independently owned and operated franchisee of BHH Affiliates,
+			LLC. <br class="hidden sm:block" />Berkshire Hathaway HomeServices and the Berkshire Hathaway
+			HomeServices symbol are registered service marks of Columbia Insurance Company, a Berkshire
+			Hathaway affiliate. Equal Housing Opportunity.
 		</div>
 		<p>
-			&copy; 2021 Coastal Vantage, LLC.
+			&copy;{year} Coastal Vantage, LLC.
 			<img class="w-10 inline" src={logo} alt="MapMazeLu Portfolio" />
 			<a
 				class="button text-gray-600 transition ease-in-out hover:-translate-x-2 hover:scale-110 duration-300"
