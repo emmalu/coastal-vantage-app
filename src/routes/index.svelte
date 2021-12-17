@@ -1,5 +1,4 @@
 <script context="module">
-	import BHHS from '$lib/bhhs.svelte';
 	export const prerender = true;
 </script>
 
