@@ -38,7 +38,9 @@
 <main>
 	<slot />
 </main>
-<footer class="flex flex-col relative text-center justify-center items-center mb-0 text-xs">
+<footer
+	class="flex flex-col relative text-center justify-center items-center mt-0 sm:mt-20 mb-0 text-xs"
+>
 	<div class="inline-flex sm:hidden pb-4">
 		<button class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full">
 			<a href="tel:+18433888118" class="bhhs bhhs-button">
