@@ -43,8 +43,13 @@ a {
 	background: linear-gradient(
 		180deg,
 		var(--primary-color) 0%,
-		var(--pure-white) 15.45%,
-		var(--secondary-color) 20.45%,
-		var(--tertiary-color) 61.35%
+		var(--pure-white) 25.45%,
+		var(--secondary-color) 30.45%,
+		var(--tertiary-color) 35.35%
 	);
+}
+.glass {
+	background-color: hsla(0, 0%, 100%, 0.7);
+	-webkit-backdrop-filter: blur(25px);
+	backdrop-filter: blur(25px);
 }

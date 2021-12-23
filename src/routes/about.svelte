@@ -24,7 +24,7 @@
 		<div
 			class="cv absolute inset-0 bg-gradient-to-r from-yellow-400 to-blue-900 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-2xl"
 		/>
-		<div class="relative px-4 py-4 bg-gray-200 shadow-lg sm:rounded-2xl sm:p-16">
+		<div class="glass relative px-4 py-4 bg-gray-200 shadow-lg sm:rounded-2xl sm:p-16">
 			<div class="max-w-md mx-auto">
 				<div>
 					<p class="text-2xl font-extrabold">
