@@ -2,7 +2,7 @@
 	import logo from '$lib/header/logo.svg';
 	import Header from '$lib/header/Header.svelte';
 	import { Icon } from 'svelte-awesome';
-	import { instagram, phone, at, arrowRight } from 'svelte-awesome/icons';
+	import { instagram, phone, at, globe } from 'svelte-awesome/icons';
 	import '../app.css';
 
 	var year = new Date().getFullYear();
@@ -11,27 +11,32 @@
 <Header />
 <aside class="fixed mt-16 md:mt-32 py-3 ml-3 px-3 z-10">
 	<ul class="hidden sm:block text-center content-center">
-		<li class="hover:bg-gray-200 p-3 rounded-full">
+		<li class="hover:bg-gray-200 p-3 rounded-full shadow-neumolight">
 			<a href="https://emma.myhomecharleston.com" target="_blank">
 				<img class="w-14" src="/logos/bhhs-seal.png" alt="BHHS Logo" />
 			</a>
 		</li>
-		<li class="hover:bg-gray-200 p-2 rounded-xl">
+		<li class="hover:bg-gray-200 p-6 rounded-full shadow-neumolight">
 			<a href="tel:+18433888118" class="bhhs bhhs-button">
-				<Icon data={phone} scale={3} label="Call" />
+				<Icon data={phone} scale={2} label="Call" />
 			</a>
 		</li>
-		<li class="hover:bg-gray-200 p-2 rounded-xl">
+		<li class="hover:bg-gray-200 p-6 rounded-full shadow-neumolight">
 			<a href="https://instagram.com/coastal_vantage" target="_blank" class="bhhs bhhs-button">
-				<Icon data={instagram} scale={3} label="Instagram" />
+				<Icon data={instagram} scale={2} label="Instagram" />
 			</a>
 		</li>
-		<li class="transition duration-300 hover:bg-gray-200 p-2 rounded-xl">
+		<li class="transition duration-300 hover:bg-gray-200 p-6 rounded-full shadow-neumolight">
 			<a
 				href="mailto: hello@coastal-vantage.com?subject=Hello%20Coastal%20Vantage"
 				class="bhhs bhhs-button"
 			>
-				<Icon data={at} scale={3} label="Email" />
+				<Icon data={at} scale={2} label="Email" />
+			</a>
+		</li>
+		<li class="transition duration-300 hover:bg-gray-200 p-6 rounded-full shadow-neumolight">
+			<a href="#translate" class="bhhs bhhs-button">
+				<Icon data={globe} scale={2} label="Espanol" />
 			</a>
 		</li>
 	</ul>
@@ -100,26 +105,7 @@
 		padding-top: 3rem;
 		box-sizing: border-box;
 	}
-	/* footer {
-		display: flex;
-		flex-direction: column;
-		/* justify-content: center; 
-		align-items: center;
-		color: var(--tertiary-color);
-		margin-bottom: 0;
-		font-size: smaller;
-		position: relative;
-	} */
-
-	/* footer img {
-		width: 2em;
-		height: 2em;
-		display: inline;
-	} 
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 20px 0;
-		}
-	}*/
+	.neumorph {
+		box-shadow: inset 1px 1px 1px #fff, -9px -9px 9px #e6e6e6, 9px 9px 20px rgba(199, 199, 199, 0.8);
+	}
 </style>

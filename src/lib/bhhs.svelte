@@ -17,7 +17,7 @@
 		<div class="col-span-1">
 			<a
 				href="/contact"
-				class="button bg-yellow-400 bhhs hover:bg-gray-300 font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center mr-3 mb-3"
+				class="button bg-yellow-400 bhhs hover:bg-gray-100 hover:outline-1 hover:outline-black font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center mr-3 mb-3"
 			>
 				Contact Info<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@
 			<a
 				href="https://emma.myhomecharleston.com"
 				target="_blank"
-				class="button bg-blue-900 text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center mr-3 mb-3"
+				class="button bg-blue-900 text-white hover:bg-blue-300 hover:text-blue-900 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center mr-3 mb-3"
 				>BHHS Properties <svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-5 w-5 inline"

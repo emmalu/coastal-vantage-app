@@ -8,15 +8,15 @@
 
 <section>
 	<div class="pt-4 px-2">
-		<img class="w-96" src="/logos/bhhs-cover.png" alt="BHH logo" />
+		<img class="w-96" src="/logos/bhhs-cover.png" alt="BHHS logo" />
 	</div>
 	<div class="pt-8 pb-4">
 		<img class="w-72 h-72" src="/logos/logo-am.svg" alt="Coastal Vantage logo" />
 	</div>
 	<div class="flex">
-		<div class="flex-wrap rounded-lg shadow-lg bg-gray-50 px-5 py-4 pb-4 text-xl">
+		<div class="min-w-full rounded-lg shadow-lg bg-gray-100 px-5 py-4 pb-4 text-xl">
 			<div class="divide-y divide-gray-300 pt-5 pb-5 text-center">
-				A <span class="font-semibold">neighborhood-focused</span> view of our Lowcountry
+				a <span class="animate-pulse cycle font-semibold" /> view of our Lowcountry
 			</div>
 			<!-- <img class="object-cover w-40" src="/cover.png" alt="Beaufort Aerial" /> -->
 			<!-- <div class="max-w-md mx-auto"><BHHS /></div> -->

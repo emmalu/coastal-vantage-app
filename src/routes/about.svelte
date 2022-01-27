@@ -22,7 +22,7 @@
 <div class="min-h-screen bg-transparent pt-8 flex flex-col justify-start sm:py-8">
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div
-			class="cv absolute inset-0 bg-gradient-to-r from-yellow-400 to-blue-900 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-2xl"
+			class="cv absolute inset-0 bg-gradient-to-r from-yellow-400 to-blue-900 shadow-lg sm:rounded-2xl"
 		/>
 		<div class="glass relative px-4 py-4 bg-gray-200 shadow-lg sm:rounded-2xl sm:p-16">
 			<div class="max-w-md mx-auto">
@@ -76,7 +76,7 @@
 									</svg>
 								</span>
 								<p class="ml-2">
-									<strong>Footage</strong> of favorite places &amp; hidden gems*
+									<strong>Footage</strong> of favorite places &amp; hidden gems
 								</p>
 							</li>
 							<li class="flex items-start">
@@ -93,7 +93,7 @@
 										/>
 									</svg>
 								</span>
-								<p class="ml-2"><strong>Neighborhood-focused</strong> data & resources*</p>
+								<p class="ml-2"><strong>Neighborhood-focused</strong> data & resources</p>
 							</li>
 							<li class="flex items-start">
 								<span class="h-6 flex items-center sm:h-7">
@@ -146,7 +146,7 @@
 								</p>
 							</li>
 						</ul>
-						<div class="text-sm"><em>* Coming soon...</em></div>
+						<!-- <div class="text-sm"><em>* Coming soon...</em></div> -->
 					</div>
 					<BHHS />
 				</div>

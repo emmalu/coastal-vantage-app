@@ -42,14 +42,37 @@ a {
 .cv {
 	background: linear-gradient(
 		180deg,
-		var(--primary-color) 0%,
-		var(--pure-white) 25.45%,
-		var(--secondary-color) 30.45%,
-		var(--tertiary-color) 35.35%
+		var(--primary-color) 5%,
+		var(--pure-white) 10%,
+		var(--secondary-color) 30%,
+		var(--tertiary-color) 40%
 	);
 }
 .glass {
 	background-color: hsla(0, 0%, 100%, 0.7);
 	-webkit-backdrop-filter: blur(25px);
 	backdrop-filter: blur(25px);
+}
+
+.cycle:after {
+	animation-name: cycle;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	content: '';
+}
+
+@keyframes cycle {
+	0%,
+	100% {
+		content: 'data-driven';
+	}
+	25% {
+		content: 'future-minded';
+	}
+	50% {
+		content: 'neighborhood-focused';
+	}
+	75% {
+		content: 'resilient';
+	}
 }
