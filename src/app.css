@@ -59,9 +59,27 @@ a {
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
 	content: '';
+	-webkit-animation-name: cycle;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes cycle {
+	0%,
+	100% {
+		content: 'data-driven';
+	}
+	25% {
+		content: 'future-minded';
+	}
+	50% {
+		content: 'neighborhood-focused';
+	}
+	75% {
+		content: 'resilient';
+	}
 }
 
-@keyframes cycle {
+@-webkit-keyframes cycle {
 	0%,
 	100% {
 		content: 'data-driven';

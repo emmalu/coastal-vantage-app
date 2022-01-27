@@ -16,7 +16,7 @@
 	<div class="flex">
 		<div class="min-w-full rounded-lg shadow-lg bg-gray-100 px-5 py-4 pb-4 text-xl">
 			<div class="divide-y divide-gray-300 pt-5 pb-5 text-center">
-				A <span class="animate-pulse cycle font-semibold">data-driven</span> view of our Lowcountry
+				A <span class="animate-pulse cycle font-semibold" /> view of our Lowcountry
 			</div>
 			<!-- <img class="object-cover w-40" src="/cover.png" alt="Beaufort Aerial" /> -->
 			<!-- <div class="max-w-md mx-auto"><BHHS /></div> -->
