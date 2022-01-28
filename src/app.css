@@ -54,43 +54,28 @@ a {
 	backdrop-filter: blur(25px);
 }
 
-.cycle:after {
-	animation-name: cycle;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
+.cycle {
+	transform: rotate(90);
+	-webkit-transform: rotate(90);
 	content: '';
-	-webkit-animation-name: cycle;
-	-webkit-animation-duration: 10s;
-	-webkit-animation-iteration-count: infinite;
-}
-@keyframes cycle {
-	0%,
-	100% {
-		content: 'data-driven';
-	}
-	25% {
-		content: 'future-minded';
-	}
-	50% {
-		content: 'neighborhood-focused';
-	}
-	75% {
-		content: 'resilient';
-	}
 }
 
-@-webkit-keyframes cycle {
-	0%,
-	100% {
+.cycle::after {
+	animation: cycle 10s linear infinite alternate;
+	content: 'neighborhood-focused';
+}
+
+@keyframes cycle {
+	25% {
 		content: 'data-driven';
 	}
-	25% {
-		content: 'future-minded';
-	}
 	50% {
-		content: 'neighborhood-focused';
+		content: 'future-minded';
 	}
 	75% {
 		content: 'resilient';
+	}
+	100% {
+		content: 'neighborhood-focused';
 	}
 }

@@ -49,22 +49,28 @@
 	class="flex flex-col relative text-center justify-center items-center mt-0 sm:mt-20 mb-0 text-xs"
 >
 	<div class="inline-flex sm:hidden pb-4">
-		<button class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full">
+		<button
+			class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full shadow-neumodark"
+		>
 			<a href="tel:+18433888118" class="bhhs bhhs-button">
 				<Icon data={phone} scale={2} label="Call" />
 			</a>
 		</button>
-		<button class="bg-white hover:bg-blue-200 text-gray-800 p-2 rounded-full">
+		<button class="bg-white hover:bg-blue-200 text-gray-800 p-2 rounded-full shadow-neumodark">
 			<a href="https://emma.myhomecharleston.com" target="_blank">
 				<img class="w-8" src="/logos/bhhs-seal.png" alt="BHHS Logo" />
 			</a>
 		</button>
-		<button class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full">
+		<button
+			class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full shadow-neumodark"
+		>
 			<a href="https://instagram.com/coastal_vantage" target="_blank" class="bhhs bhhs-button">
 				<Icon data={instagram} scale={2} label="Instagram" />
 			</a>
 		</button>
-		<button class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full">
+		<button
+			class="bg-white hover:bg-blue-200 text-gray-800 py-2 px-3 rounded-full shadow-neumodark"
+		>
 			<a
 				href="mailto:hello@coastal-vantage.com?subject=Hello%20Coastal%20Vantage"
 				class="bhhs bhhs-button"
