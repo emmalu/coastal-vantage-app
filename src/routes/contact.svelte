@@ -27,8 +27,9 @@
 	<section>
 		<img class="w-56" src="/logos/bhhs-cover.png" alt="BHHS Logo" />
 
-		<p class="pt-3">License #: 126299</p>
-		<p>1440 Ben Sawyer Blvd Ste 1503</p>
+		<p class="pt-3">License #126299</p>
+		<!-- <p>1440 Ben Sawyer Blvd Ste 1503</p> -->
+		<p>774 S Shelmore Blvd Suite #106</p>
 		<p>Mt Pleasant, SC 29464</p>
 		<p class="pb-3"><a class="bhhs hover:text-red-700" href="tel:+18433888118">843-388-8118</a></p>
 		<a
