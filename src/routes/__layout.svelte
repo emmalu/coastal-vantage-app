@@ -111,7 +111,4 @@
 		padding-top: 3rem;
 		box-sizing: border-box;
 	}
-	.neumorph {
-		box-shadow: inset 1px 1px 1px #fff, -9px -9px 9px #e6e6e6, 9px 9px 20px rgba(199, 199, 199, 0.8);
-	}
 </style>
