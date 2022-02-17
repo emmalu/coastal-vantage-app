@@ -12,19 +12,25 @@
 			/>
 		</svg> -->
 		<ul>
-			<li class:active={$page.url.pathname === '/'}>
+			<li class:active={$page.params.pathname === '/'}>
 				<a sveltekit:prefetch href="/">Home</a>
 			</li>
-			<li class:active={$page.url.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about">Meet & Greet</a>
+			<li class:active={$page.params.pathname === '/about'}>
+				<a sveltekit:prefetch href="/about"
+					>Meet
+					<!-- <span class="hidden sm:contents">&nbsp;& Greet</span> -->
+				</a>
 			</li>
-			<li class:active={$page.url.pathname === '/bytes'}>
-				<a sveltekit:prefetch href="/bytes">House Bytes</a>
+			<li class:active={$page.params.pathname === '/bytes'}>
+				<a sveltekit:prefetch href="/bytes">Read</a>
+			</li>
+			<li class:active={$page.params.pathname === '/lists'}>
+				<a sveltekit:prefetch href="/lists">Browse</a>
 			</li>
 			<!-- <li class:active={$page.url.pathname === '/footage'}>
 				<a sveltekit:prefetch href="/footage">Footage</a>
 			</li> -->
-			<li class:active={$page.url.pathname === '/contact'}>
+			<li class:active={$page.params.pathname === '/contact'}>
 				<a sveltekit:prefetch href="/contact">Contact</a>
 			</li>
 		</ul>
