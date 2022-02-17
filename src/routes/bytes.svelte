@@ -5,6 +5,7 @@
 	import { externalLink } from 'svelte-awesome/icons';
 
 	export const router = browser;
+	export const prerender = true;
 
 	export async function load({ fetch }) {
 		const apiUrl = 'https://cv-notion.herokuapp.com';
