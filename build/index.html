@@ -5,42 +5,55 @@
 		<link rel="icon" href="/favicons/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<meta http-equiv="content-security-policy" content=""><title>Home</title>
-	<link rel="stylesheet" href="/_app/assets/vendor-f9351f49.css">
-	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-4f7c6840.css">
-	<link rel="modulepreload" href="/_app/start-746e83ae.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-f87a59c9.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-60d4c1c5.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-b26eb2ac.js"><script type="module">
-		import { start } from "/_app/start-746e83ae.js";
-		start({
-			target: document.querySelector("#svelte"),
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [
-					import("/_app/pages/__layout.svelte-60d4c1c5.js"),
-						import("/_app/pages/index.svelte-b26eb2ac.js")
-				],
-				url: new URL("http://sveltekit-prerender/"),
-				params: {}
-			}
-		});
-	</script>
+		<title>Home</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-87e898a5.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-b0dca1c4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-bf7c2e29.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-bcb15f03.js">
+		<link rel="stylesheet" href="/_app/assets/start-d5b4de3e.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-f9351f49.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-c1afb1d3.css">
+
+		<script type="module">
+			import { start } from "/_app/start-87e898a5.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-bf7c2e29.js"),
+						import("/_app/pages/index.svelte-bcb15f03.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<div id="svelte">
 
 
 <header class="z-50 fixed svelte-1qz0j3v"><nav class="svelte-1qz0j3v">
-		<ul class="svelte-1qz0j3v"><li class="svelte-1qz0j3v active"><a sveltekit:prefetch href="/" class="svelte-1qz0j3v">Home</a></li>
-			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/about" class="svelte-1qz0j3v">Meet &amp; Greet</a></li>
-			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/bytes" class="svelte-1qz0j3v">House Bytes</a></li>
+		<ul class="svelte-1qz0j3v"><li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/" class="svelte-1qz0j3v">Home</a></li>
+			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/about" class="svelte-1qz0j3v">Meet
+					</a></li>
+			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/bytes" class="svelte-1qz0j3v">Read</a></li>
+			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/lists" class="svelte-1qz0j3v">Browse</a></li>
 			
 			<li class="svelte-1qz0j3v"><a sveltekit:prefetch href="/contact" class="svelte-1qz0j3v">Contact</a></li></ul>
 		</nav>
@@ -101,7 +114,10 @@
 			<a class="button text-gray-600 transition ease-in-out hover:-translate-x-2 hover:scale-110 duration-300" href="https://emmalu.github.io/portfolio" target="_blank">Developed by <span class="font-semibold">MapMazeLu</span></a></p></div>
 </footer>
 
-</div>
+
+
+			
+		</div>
 	</body>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QW4EMVVPWH"></script>
