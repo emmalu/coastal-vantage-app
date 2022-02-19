@@ -16,7 +16,7 @@
 	<div class="grid grid-cols-2 py-4">
 		<div class="col-span-1">
 			<a
-				href="/contact"
+				href="/reach"
 				class="button bg-yellow-400 bhhs hover:bg-gray-100 hover:outline-1 hover:outline-black font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center mr-3 mb-3"
 			>
 				Contact Info<svg

@@ -1,7 +1,7 @@
 import cookie from 'cookie';
 import { Headers } from '@sveltejs/kit/install-fetch';
 import { v4 as uuid } from '@lukeed/uuid';
-import type { ExternalFetch, Handle } from '@sveltejs/kit';
+import type { Handle } from '@sveltejs/kit';
 
 export const handle: Handle = async ({ request, resolve }) => {
 	const headers = new Headers();
@@ -25,21 +25,5 @@ export const handle: Handle = async ({ request, resolve }) => {
 		});
 	}
 
-	return response;
-};
-
-export const externalFetch: ExternalFetch = async ({ url, method, headers, body }) => {
-	const response = await fetch(url, {
-		method,
-		headers: {
-			...headers
-			//cookie: headers.cookie || ''
-		},
-		body: body && JSON.stringify(body)
-	});
-
-	if (response.status === 401) {
-		throw new Error('Unauthorized');
-	}
 	return response;
 };

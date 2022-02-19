@@ -22,7 +22,7 @@
 </svelte:head>
 <div class="items-center bg-transparent py-3 flex flex-col justify-start sm:py-8">
 	<Contact />
-	<section class="max-w-xl mx-auto p-3 text-sm text-justify">
+	<section class="max-w-xl mx-auto pt-8 text-sm text-justify">
 		<div>
 			<span class="float-left text-6xl pr-2">E</span>mma first moved to Charleston in
 			<span class="font-semibold">2009</span>, to enroll in the M.S. Environmental Studies program

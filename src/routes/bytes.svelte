@@ -1,39 +1,36 @@
 <script context="module">
-	import { browser } from '$app/env';
 	import Contact from '$lib/contact.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
-
-	export const router = browser;
 	export const prerender = true;
 
 	export async function load({ fetch }) {
-		const apiUrl = 'https://cv-notion.herokuapp.com';
-		const url = `${apiUrl}/posts`;
-		const res = await fetch(url, {
+		const rHeaders = new Headers();
+		rHeaders.append('Accept', 'application/json');
+		const requestOptions = {
 			method: 'GET',
+			headers: rHeaders,
 			mode: 'cors',
-			headers: {
-				'content-type': 'application/json'
-			}
-		});
-
-		if (res.ok) {
+			cache: 'default'
+		};
+		const rootUrl = 'https://cv-notion.herokuapp.com';
+		const response = await fetch('https://cv-notion.herokuapp.com/posts', requestOptions);
+		const data = await response.text();
+		//console.log(data);
+		if (data) {
 			return {
 				props: {
-					posts: await res.json()
+					posts: JSON.parse(data)
 				}
 			};
 		}
-
 		return {
-			status: res.status,
-			error: new Error(`Could not load ${apiUrl}`)
+			error: new Error(`Couldn't load ${rootUrl}/posts`)
 		};
 	}
 </script>
 
-<script lang="ts">
+<script>
 	export let posts = [];
 </script>
 
@@ -45,11 +42,10 @@
 	<div class="text-center contents-center pb-16">
 		<h2 class="block pb-4 font-bold">House Bytes [Blog]</h2>
 		<p class="pb-4 w-96">
-			A place for timely, CHS-focused bits for homeowners, home buyers, & those interested in Real
-			Estate.
+			A place for CHS-focused Real Estate bits & bytes for existing & prospective homeowners.
 		</p>
 		{#if posts.length === 0}
-			<p class="text-center animate-pulse">Loading... {posts.length} posts</p>
+			<p class="text-center animate-pulse">Loading posts...</p>
 		{:else if posts.length > 0}
 			<table class="w-full text-center">
 				<tbody>
@@ -61,7 +57,7 @@
 										href="https://emmalu.notion.site/{post.slug}-{post.id.split('-').join('')}"
 										target="_blank"
 										class="bhhs hover:text-red-700 text-2xl items-center"
-										>{post?.title}
+										>{post.title}
 										<Icon data={externalLink} /></a
 									>
 								</p>
@@ -94,6 +90,3 @@
 		<Contact />
 	</div>
 </div>
-
-<style>
-</style>

@@ -1,5 +1,7 @@
 <script context="module">
 	import Contact from '$lib/contact.svelte';
+	import { Icon } from 'svelte-awesome';
+	import { externalLink } from 'svelte-awesome/icons';
 
 	export async function load({ fetch }) {
 		const rHeaders = new Headers();
@@ -11,7 +13,7 @@
 			cache: 'default'
 		};
 		const rootUrl = 'https://cv-notion.herokuapp.com';
-		const response = await fetch('https://cv-notion.herokuapp.com/lists', requestOptions);
+		const response = await fetch(`${rootUrl}/lists`, requestOptions);
 		const data = await response.text();
 		//console.log(data);
 		if (data) {
@@ -48,7 +50,7 @@
 					<a href={list.url} target="_blank" class="items-center bhhs hover:text-red-700 text-2xl">
 						<p>
 							{list.title}
-							<!-- <Icon data={externalLink} /> -->
+							<Icon data={externalLink} />
 						</p>
 						<p class="text-xs text-blue-900 pt-2 italic">
 							Updated: {new Date(list.edited).toLocaleDateString('en-us', {

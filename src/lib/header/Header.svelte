@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { Icon } from 'svelte-awesome';
+	import { home } from 'svelte-awesome/icons';
 </script>
 
 <header class="z-50 fixed">
@@ -13,16 +15,16 @@
 		</svg> -->
 		<ul>
 			<li class:active={$page.params.pathname === '/'}>
-				<a sveltekit:prefetch href="/">Home</a>
+				<a sveltekit:prefetch href="/">Home <!-- <Icon data={home} /> --></a>
 			</li>
-			<li class:active={$page.params.pathname === '/about'}>
-				<a sveltekit:prefetch href="/about"
+			<li class:active={$page.params.pathname === '/meet'}>
+				<a sveltekit:prefetch href="/meet"
 					>Meet
 					<!-- <span class="hidden sm:contents">&nbsp;& Greet</span> -->
 				</a>
 			</li>
 			<li class:active={$page.params.pathname === '/bytes'}>
-				<a sveltekit:prefetch href="/bytes">Read</a>
+				<a href="/bytes">Read</a>
 			</li>
 			<li class:active={$page.params.pathname === '/lists'}>
 				<a sveltekit:prefetch href="/lists">Browse</a>
@@ -30,8 +32,8 @@
 			<!-- <li class:active={$page.url.pathname === '/footage'}>
 				<a sveltekit:prefetch href="/footage">Footage</a>
 			</li> -->
-			<li class:active={$page.params.pathname === '/contact'}>
-				<a sveltekit:prefetch href="/contact">Contact</a>
+			<li class:active={$page.params.pathname === '/reach'}>
+				<a sveltekit:prefetch href="/reach">Reach</a>
 			</li>
 		</ul>
 		<!-- <svg viewBox="0 0 1440 320" class="right">
