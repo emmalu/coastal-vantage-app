@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>House Bytes</title>
+	<title>Bytes</title>
 </svelte:head>
 
 <div class="flex flex-col py-2 sm:py-8 items-center">

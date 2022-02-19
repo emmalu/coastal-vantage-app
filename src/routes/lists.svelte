@@ -26,7 +26,7 @@
 </script>
 
 <svelte:head>
-	<title>Curated Lists</title>
+	<title>Lists</title>
 </svelte:head>
 
 <div class="grid grid-flow-row py-2 sm:py-8 text-center">

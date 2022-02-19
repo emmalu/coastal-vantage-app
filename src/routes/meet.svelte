@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Meet</title>
+	<title>C/V</title>
 </svelte:head>
 
 <div class="min-h-screen bg-transparent flex flex-col justify-start sm:pt-8 md:pt-4">
