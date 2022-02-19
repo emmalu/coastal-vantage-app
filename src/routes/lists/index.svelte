@@ -3,28 +3,20 @@
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
 
+	export const prerender = true;
+
 	export async function load({ fetch }) {
-		const rHeaders = new Headers();
-		rHeaders.append('Accept', 'application/json');
-		const requestOptions = {
-			method: 'GET',
-			headers: rHeaders,
-			mode: 'cors',
-			cache: 'default'
-		};
-		const rootUrl = 'https://cv-notion.herokuapp.com';
-		const response = await fetch(`${rootUrl}/lists`, requestOptions);
-		const data = await response.text();
-		//console.log(data);
+		const response = await fetch('lists.json');
+		const data = await response.json();
 		if (data) {
 			return {
 				props: {
-					lists: JSON.parse(data)
+					lists: data
 				}
 			};
 		}
 		return {
-			error: new Error(`Couldn't load ${rootUrl}/posts`)
+			error: new Error(`Couldn't load Curated Lists. :(`)
 		};
 	}
 </script>

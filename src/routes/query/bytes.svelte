@@ -3,6 +3,7 @@
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
 	export const prerender = true;
+	export const ssr = false;
 
 	export async function load({ fetch }) {
 		const rHeaders = new Headers();

@@ -13,11 +13,11 @@ export async function get() {
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
 	const response = await axios(config);
-	const lists = response.data;
+	const data = response.data;
 
-	if (lists) {
+	if (data) {
 		return {
-			body: { lists }
+			body: data
 		};
 	}
 	return {

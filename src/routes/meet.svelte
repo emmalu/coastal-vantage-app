@@ -19,7 +19,7 @@
 	<title>Meet</title>
 </svelte:head>
 
-<div class="min-h-screen bg-transparent flex flex-col justify-start">
+<div class="min-h-screen bg-transparent flex flex-col justify-start sm:pt-8 md:pt-4">
 	<div class="relative py-3 sm:max-w-xl sm:mx-auto">
 		<div class="cv absolute inset-0 bg-gradient-to-r from-yellow-400 to-blue-900 shadow-lg" />
 		<div class="glass relative px-4 py-4 bg-gray-200 shadow-lg sm:p-16">

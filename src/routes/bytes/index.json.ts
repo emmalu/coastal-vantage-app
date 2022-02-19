@@ -14,9 +14,11 @@ export async function get() {
 	// @ts-ignore
 	const response = await axios(config);
 	const data = response.data;
-
+	//console.log(data);
 	if (data) {
-		return data;
+		return {
+			body: data
+		};
 	}
 	return {
 		status: 404,
