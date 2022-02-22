@@ -4,7 +4,7 @@
 </section>
 <section>
 	<img class="w-56" src="/logos/bhhs-cover.png" alt="BHHS Logo" />
-	<div class="hidden sm:block text-center">
+	<div class="text-center">
 		<p class="pt-3">License #126299</p>
 		<!-- <p>1440 Ben Sawyer Blvd Ste 1503</p> -->
 		<p>774 S Shelmore Blvd Suite #106</p>

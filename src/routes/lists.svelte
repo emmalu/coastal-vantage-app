@@ -3,7 +3,7 @@
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
 
-	export const prerender = true;
+	//export const prerender = true;
 
 	export async function load({ fetch }) {
 		const response = await fetch('lists.json');

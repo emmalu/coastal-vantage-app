@@ -2,7 +2,7 @@
 	import Contact from '$lib/contact.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
-	export const prerender = true;
+	//export const prerender = true;
 
 	export async function load({ fetch }) {
 		const response = await fetch('bytes.json');
@@ -41,7 +41,7 @@
 				<tbody>
 					{#each posts as post}
 						<tr>
-							<td class="items-center text-center">
+							<td class="items-center text-center pt-8">
 								<p>
 									<a
 										href="https://emmalu.notion.site/{post.slug}-{post.id.split('-').join('')}"
@@ -76,7 +76,5 @@
 			</p>
 		{/if}
 	</div>
-	<div>
-		<Contact />
-	</div>
+	<Contact />
 </div>
