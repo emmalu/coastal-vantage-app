@@ -16,9 +16,7 @@ const config = {
 			assets: 'build',
 			fallback: null
 		})
-	},
-	clientSideRendering: true,
-	serverSideRendering: false
+	}
 };
 
 export default config;

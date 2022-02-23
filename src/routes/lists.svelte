@@ -1,7 +1,5 @@
 <script context="module">
 	import Contact from '$lib/contact.svelte';
-	import { Icon } from 'svelte-awesome';
-	import { externalLink } from 'svelte-awesome/icons';
 
 	//export const prerender = true;
 
@@ -42,10 +40,10 @@
 					<a href={list.url} target="_blank" class="items-center bhhs hover:text-red-700 text-2xl">
 						<p>
 							{list.title}
-							<Icon data={externalLink} />
 						</p>
 						<p class="text-xs text-blue-900 pt-2 italic">
 							Updated: {new Date(list.edited).toLocaleDateString('en-us', {
+								timeZone: 'UTC',
 								year: 'numeric',
 								month: 'short',
 								day: 'numeric'
@@ -56,9 +54,7 @@
 			{/each}
 		</div>
 	{:else}
-		<p class="text-red-400">
-			Unable to load lists at this time, but rest assured we're looking into it.. <br /> Apologies!
-		</p>
+		<p class="text-red-400">Unable to load lists right now.. :( Please try again later.</p>
 	{/if}
 	<div>
 		<Contact />

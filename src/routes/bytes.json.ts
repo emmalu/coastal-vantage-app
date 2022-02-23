@@ -5,7 +5,7 @@ const rootUrl = 'https://cv-notion.herokuapp.com';
 const config = {
 	method: 'get',
 	url: `${rootUrl}/posts`,
-	headers: { Accept: 'application/json' }
+	headers: { Accept: 'application/json', 'cache-control': 'public, max-age=3600' }
 };
 
 export async function get() {

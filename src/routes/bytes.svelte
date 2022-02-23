@@ -2,7 +2,7 @@
 	import Contact from '$lib/contact.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
-	//export const prerender = true;
+	export const prerender = true;
 
 	export async function load({ fetch }) {
 		const response = await fetch('bytes.json');
@@ -60,6 +60,7 @@
 								{/each}
 								<p class="text-xs italic">
 									Published {new Date(post.published).toLocaleDateString('en-us', {
+										timeZone: 'UTC',
 										year: 'numeric',
 										month: 'short',
 										day: 'numeric'
@@ -71,9 +72,7 @@
 				</tbody>
 			</table>
 		{:else}
-			<p class="text-red-400">
-				Unable to load posts at this time, but rest assured we're looking into it.. <br /> Apologies!
-			</p>
+			<p class="text-red-400">Unable to load posts right now.. :( Please try again later.</p>
 		{/if}
 	</div>
 	<Contact />
