@@ -16,7 +16,8 @@ const config = {
 			assets: 'build',
 			fallback: null
 		})
-	}
+	},
+	serverSideRendering: false
 };
 
 export default config;
