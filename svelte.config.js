@@ -17,7 +17,8 @@ const config = {
 			fallback: null
 		})
 	},
-	clientSideRouting: false
+	clientSideRouting: false,
+	clientSideRender: true
 };
 
 export default config;
