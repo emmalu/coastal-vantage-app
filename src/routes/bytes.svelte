@@ -1,8 +1,11 @@
 <script context="module">
+	import { browser, dev } from '$app/env';
 	import Contact from '$lib/contact.svelte';
 	import { Icon } from 'svelte-awesome';
 	import { externalLink } from 'svelte-awesome/icons';
-	export const prerender = true;
+
+	export const hydrate = true;
+	export const router = browser;
 
 	export async function load({ fetch }) {
 		const response = await fetch('bytes.json');

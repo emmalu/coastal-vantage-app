@@ -1,7 +1,9 @@
 <script context="module">
+	import { browser, dev } from '$app/env';
 	import Contact from '$lib/contact.svelte';
 
-	//export const prerender = true;
+	export const hydrate = true;
+	export const router = browser;
 
 	export async function load({ fetch }) {
 		const response = await fetch('lists.json');
