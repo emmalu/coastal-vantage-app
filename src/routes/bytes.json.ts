@@ -3,12 +3,12 @@ import axios from 'axios';
 
 const rootUrl = 'https://cv-notion.herokuapp.com';
 const config = {
-	method: 'get',
+	method: 'GET',
 	url: `${rootUrl}/posts`,
 	headers: { Accept: 'application/json', 'Cache-Control': 'public, max-age=0' }
 };
 
-export async function get() {
+export async function GET() {
 	// `params.id` comes from [id].js
 	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 	// @ts-ignore
