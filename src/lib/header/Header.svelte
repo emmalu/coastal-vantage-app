@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { Icon } from 'svelte-awesome';
-	import { home } from 'svelte-awesome/icons';
+	import { home, handshakeO, newspaperO, search, infoCircle, language } from 'svelte-awesome/icons';
 </script>
 
 <header class="z-50 fixed">
@@ -15,25 +15,32 @@
 		</svg> -->
 		<ul>
 			<li class:active={$page.params.pathname === '/'}>
-				<a sveltekit:prefetch href="/">Home <!-- <Icon data={home} /> --></a>
+				<a sveltekit:prefetch href="/">
+					<Icon data={home} /><span class="hidden sm:inline">&nbsp;Home</span>
+				</a>
 			</li>
 			<li class:active={$page.params.pathname === '/meet'}>
-				<a sveltekit:prefetch href="/meet"
-					>Meet
-					<!-- <span class="hidden sm:contents">&nbsp;& Greet</span> -->
+				<a sveltekit:prefetch href="/meet">
+					<Icon data={handshakeO} /><span class="hidden sm:inline">&nbsp;Meet</span>
 				</a>
 			</li>
 			<li class:active={$page.params.pathname === '/bytes'}>
-				<a href="/bytes">Read</a>
+				<a href="/bytes">
+					<Icon data={newspaperO} /><span class="hidden sm:inline">&nbsp;Read</span>
+				</a>
 			</li>
 			<li class:active={$page.params.pathname === '/lists'}>
-				<a sveltekit:prefetch href="/lists">Browse</a>
+				<a sveltekit:prefetch href="/lists">
+					<Icon data={search} /><span class="hidden sm:inline">&nbsp;Browse</span>
+				</a>
 			</li>
 			<!-- <li class:active={$page.url.pathname === '/footage'}>
 				<a sveltekit:prefetch href="/footage">Footage</a>
 			</li> -->
 			<li class:active={$page.params.pathname === '/reach'}>
-				<a sveltekit:prefetch href="/reach">Reach</a>
+				<a sveltekit:prefetch href="/reach">
+					<Icon data={infoCircle} /><span class="hidden sm:inline">&nbsp;Reach</span>
+				</a>
 			</li>
 		</ul>
 		<!-- <svg viewBox="0 0 1440 320" class="right">

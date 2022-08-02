@@ -65,7 +65,7 @@
 					clip-rule="evenodd"
 				/>
 			</svg>
-			<a href="https://instagram.com/coastal_vantage" target="_blank"
+			<a href="https://instagram.com/coastal.vantage" target="_blank"
 				><svg
 					version="1.1"
 					class="fa-icon inline bhhs hover:text-red-700"

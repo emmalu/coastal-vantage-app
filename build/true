@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/immutable/start-a2d2dc75.js">
+	<link rel="modulepreload" href="/_app/immutable/start-95a71b96.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-a52e492f.js">
 	</head>
 	<body>
 		<div id="svelte">
 		<script type="module" data-sveltekit-hydrate="45h">
-		import { set_public_env, start } from "/_app/immutable/start-a2d2dc75.js";
+		import { set_public_env, start } from "/_app/immutable/start-95a71b96.js";
 
 		set_public_env({});
 
